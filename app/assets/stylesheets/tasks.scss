@@ -1,3 +1,58 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.square {
+  width: 15px;
+  height: 15px;
+  border: 1px black solid;
+}
+
+.checked {
+  background-color: black;
+}
+
+.task-head {
+  display: flex;
+  align-items: center;
+  h2 {
+    margin-right: 20px;
+  }
+  font-family: monospace;
+}
+
+.task-card {
+  width: 30%;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+}
+
+.text-red {
+  color: red;
+}
+
+.text-green {
+  color: green;
+}
+
+.completion {
+  display: flex;
+  p {
+    margin: 0px 10px 0px 0px;
+  }
+}
+
+.btn-link {
+  margin-top: 30px;
+}
+
+.task-links {
+  display: flex;
+  justify-content: space-between;
+}

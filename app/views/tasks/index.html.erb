@@ -1,0 +1,22 @@
+<h1>List of Tasks</h1>
+
+<% @tasks.each do |task| %>
+  <div class="task-card">
+    <div class="task-head">
+      <h2><%= task.title %></h2>
+      <br>
+      <div class='square<%= " checked" if task.completed %>'></div>
+    </div>
+    <div class="task-body">
+      <p><%= task.details %></p>
+      <div class="task-links">
+        <p><%= link_to "See Task Details" , task_path(task) %></p>
+        <p><%= link_to "Delete Task", task_path(task), method: :delete %></p>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+<div class="btn-link">
+  <%= link_to "Add Task", new_task_path %>
+</div>
